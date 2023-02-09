@@ -1,0 +1,8 @@
+version: '3'
+services:
+  mini-conda:
+    build: 
+      context: .
+      dockerfile: .DockerFile
+    volumes:
+      - .:/data

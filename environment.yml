@@ -1,0 +1,13 @@
+name: rcp209
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - scipy
+  - scikit-image
+  - scikit-learn
+  - scikit-learn-intelex
+  - pandas
+  - numpy
+  - pytorch
+  - tensorflow
