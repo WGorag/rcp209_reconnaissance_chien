@@ -1,4 +1,4 @@
-# Project Title
+# Stanford Dogs (CNAM RCP209)
 
 This project is provided with a docker container.
 To run the project you need to install it.<br>

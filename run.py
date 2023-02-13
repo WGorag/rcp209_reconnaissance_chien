@@ -1,4 +1,3 @@
-# print('Container run');
 import pathlib
 import os
 import tensorflow as tf
