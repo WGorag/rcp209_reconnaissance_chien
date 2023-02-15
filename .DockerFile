@@ -1,14 +1,11 @@
-FROM continuumio/anaconda3:2022.10
+FROM tensorflow/tensorflow:latest-gpu
 
-RUN apt-get update && apt-get install -y --fix-missing 
+WORKDIR /data
 
-COPY environment.yml .
-RUN conda env create -f environment.yml
+COPY requierement.txt requierement.txt
 
-# RUN echo "conda activate rcp209" >> ~/.bashrc
+RUN pip install -r requierement.txt
 
-# ENTRYPOINT ["tail"]
-# CMD ["-f","/dev/null"]
+EXPOSE 8888
 
-COPY run.py .
-ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "rcp209", "python", "run.py"]
+ENTRYPOINT [ "jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--no-browser", "--NotebookApp.token=''","--NotebookApp.password=''" ]

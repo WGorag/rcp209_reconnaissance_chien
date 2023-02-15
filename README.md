@@ -6,8 +6,9 @@ At the and of the installation the container run the project script automaticall
 To make this step execute : ` docker-compose up --build`
 This step can take few minutes.
 
-Until, the install is done, if you want to restart this project you need to execute this.<br>
-`docker start conda_cnam && docker attach conda_cnam`
+Until, the install is done, to run the JupiterLab put in your browser this url : [http://127.0.0.1:8888/lab](http://127.0.0.1:8888/lab)
 
-When you run the project for the first time (normaly at the end of the container installation), the script will download the dataset.<br>
-Downlaod it can be take few minutes but this operation will no be repeat for the other time.
+The file name : "rcp209.ipynb" is the projet.
+
+To close the container use `docker-compose stop`.
+To restart the project run `docker-compose up`

@@ -1,9 +1,18 @@
 version: '3'
 services:
-  mini-conda:
-    container_name: conda_cnam
+  tf-jupiter:
+    container_name: tf-jupiter
     build: 
       context: .
       dockerfile: .DockerFile
+    ports:
+      - 8888:8888
     volumes:
       - .:/data
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
