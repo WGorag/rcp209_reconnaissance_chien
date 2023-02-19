@@ -2,9 +2,9 @@ FROM tensorflow/tensorflow:latest-gpu
 
 WORKDIR /data
 
-COPY requierement.txt requierement.txt
+COPY requirement.txt requirement.txt
 
-RUN pip install -r requierement.txt
+RUN pip install -r requirement.txt
 
 EXPOSE 8888
 
