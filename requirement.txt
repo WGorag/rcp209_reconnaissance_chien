@@ -2,3 +2,4 @@ jupyterlab
 pandas
 matplotlib
 python_splitter
+scikit-learn
