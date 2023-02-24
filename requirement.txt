@@ -3,3 +3,5 @@ pandas
 matplotlib
 python_splitter
 scikit-learn
+Pillow
+opencv-python
