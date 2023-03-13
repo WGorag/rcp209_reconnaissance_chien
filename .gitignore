@@ -8,3 +8,4 @@ annotation/*
 human_none_humain_archive.zip
 human_archive.zip
 background_archive.zip
+*.h5
