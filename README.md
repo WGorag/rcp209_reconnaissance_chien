@@ -10,8 +10,8 @@ Une fois l'installation réalisé vous pouvez aller sur cette url pour accéder 
 
 ## Contenu du projet
 
-- 'pretraitement.ipynb' qui est le fichier permettant de réaliser le dataset personnalisé utilisé pour entraîner mes modèles.
 - 'rcp209_sans_transfert.ipynb' qui est le premier modèle généré par forcement fonctionnel
-- 'ResNetXXX.ipynb' qui sont les différents modèles préentraînés que j'ai créé, le fichier 'ResNet101V2.ipynb' a un élément en plus qui est la metric permettant de générer la matrice de confusion et de savoir quelle race et confondu avec quelle autre race
+- 'ResNetXXX.ipynb' qui sont les différents modèles préentraînés que j'ai créé et avec du finetuning
+- 'ResNet50V2_confusion.ipynb' modèle permettant d'obtenir la matrice de confusion sur un entrainement moins approfondi que pour les autres modèles
 - 'Test_modele_resnet_101.ipynb' qui permet d'utiliser le modèle une fois celui-ci généré une première fois
 - 'rcp209_stanford_dogs.pdf' qui est le compte-rendu de mon travail
